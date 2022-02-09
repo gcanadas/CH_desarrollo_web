@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+    <!-- Cargo fuente Roboto de Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Cargo hoja de estilos -->
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>LEDGAT - Tecnlogías y Servicios para Telesalud</title>   
+</head>
+<body>
+    <div class="gridContainer">
+        <!-- Comienzo de encabezado de logo y navegación -->
+        <div class="logo">
+            <a href="/index.html" class="logo__img"> <img src="/img/Logo.svg" alt="Logo"></a>
+        </div>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a href="/index.html">Home</a></li>
+                    <li class="nav__li"><a href="/pages/about.html">Quiénes Somos</a></li>
+                    <li class="nav__li"><a href="/pages/services.html">Servicios</a></li>
+                    <li class="nav__li"><a href="/pages/products.html">Productos</a></li>
+                    <li class="nav__li"><a href="/pages/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="login">
+            <div class="login__button">
+                <a href="/pages/login.html">Acceso</a>
+            </div>
+        </div>
+        <!-- Final de encabezado -->
+        <!-- Comienzo del cuerpo principal de la página-->
+        <main class="main main--contact">
+            <section class="contact">
+                <h1 class="section__title contact__title">Contactanos</h1>
+                <form class="contact__formulario">
+                    <div>
+                        <input type="text" name="name" id="name1" placeholder="Nombre y Apellido *" required>
+                    </div>
+                    <div>
+                        <input type="tel" name="telephone" id="telephone1" placeholder="Teléfono *" required>
+                    </div>
+                    <div>
+                        <input type="email" name="mail" id="mail1" placeholder="E-mail *" required>
+                    </div>
+                    <div>
+                        <select name="country" required>
+                            <option disabled selected>Seleccione país *</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" name="company" id="company1" placeholder="Empresa *" required>
+                    </div>
+                    <div>
+                        <textarea name="query" id="query1" cols="30" rows="10" placeholder="Ingrese su consulta"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="contact__formulario__enviar">Enviar</button>
+                    </div>
+                </form>
+            </section>
+            <section class="location">
+                <h2 class="section__title contact__title">Donde estamos</h2>
+                <div class="location__maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.1611567015018!2d-68.54407937080539!3d-31.53391905577044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141414f2ddca9%3A0xd9273551a1f034e8!2sLED%26T!5e0!3m2!1ses-419!2sar!4v1642470880605!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <address>
+                        <p>Av. Libertador San Martín 1109 (Oeste) - San Juan | Argentina</p>
+                        <p>CPA: J5402DCS | Teléfono: +54 264 4211700</p>
+                    </address>
+                </div>
+            </section>
+        </main>
+        <!-- Final del cuerpo principal de la página-->
+        <!-- Pie de página -->
+        <footer class="foot">
+            <p class="foot__copy">Copyright &copy; 2022 - Diseño web realizado por Gabriel Cañadas</p>
+            <p class="foot__follow">Siguenos en nuestras redes</p>
+            <ul class="foot__networks">
+                <li><a href="mailto:ledgatsj@gmail.com" target="_blank"><img src="/img/email.png" alt="E-mail"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="/img/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="/img/facebook.png" alt="Facebook" ></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><img src="/img/twitter.png" alt="Twitter" ></a></li>
+            </ul> 
+        </footer>
+    </div>
+</body>
+</html>
