@@ -83,10 +83,16 @@ header{
 }
 .nav__li a{
     color: black;
+    transition: color .2s linear,
+                transform 0.2s;
 }
 .nav__li a:hover{
     color: #e5e5e5;
 }
+.nav__li a:active{
+    transform: scale(0.95);
+}
+
 .login{
     display:flex;
     justify-content: center;
@@ -105,10 +111,23 @@ header{
     background-color: #FCA311; 
     box-shadow: 3px 3px 10px;
     border-radius: 10px;
+    transition: background-color 0.2s linear,
+                transform 0.2s;
 }
 
 .login__button:hover{
      background-color: #14213d;
+     transform: translateY(-10%);
+}
+
+.login__button a{
+    color: #000000;
+    text-shadow: none;
+    transition: color 0.2s linear;
+}
+
+.login__button a:hover{
+    color: #e5e5e5;
 }
 
 /*Estilo de la pagina principal*/
@@ -165,16 +184,20 @@ header{
     font-size: 1.5rem;
     font-weight: bold;
     color: #FFFFFF;
-    border: 10px solid #14213d;
+    padding: 10px;
     background-color: #14213d;
+    text-shadow: none;
     border-radius:10px;
     margin-bottom: 30px;
     margin-top:auto;
+    transition: color 0.2s linear, 
+                background-color 0.2s linear,
+                transform 0.2s;
 }
-.main__contenedor a:hover{
+.main__link:hover{
     background-color: #e5e5e5;
-    border-color: #e5e5e5;
     color:#14213d ;
+    transform: translateY(-10%);
 }
 .section{
     margin: 1.5%;
@@ -294,6 +317,7 @@ header{
     background-color: #7a7575;
     color: #e5e5e5;
     border-radius: 5px;
+    transition: background-color 0.1s;
 }
 .contact__formulario__enviar{
     width: auto;
@@ -301,9 +325,14 @@ header{
     margin: auto;
     padding: 5px;
     background-color: #FCA311;
-    box-shadow: 3px 3px 10px;
     border-radius: 10px;
     font-weight: bold;
+    transition: background-color 0.1s,
+                color 0.1s;
+}
+.contact__formulario__enviar:active{
+    background-color: #14213d;
+    color: #ffffff;
 }
 .contact__formulario input:focus{
     background-color: #14213d;
@@ -466,7 +495,8 @@ header{
     width: 100%;
     height: 15vh;
     color: #ffffff;
-    background-color: #000000;
+    background: rgb(252,163,17);
+    background: linear-gradient(135deg, rgba(252,163,17,1) 0%, rgba(122,117,117,1) 50%, rgba(0,0,0,1) 100%); 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
