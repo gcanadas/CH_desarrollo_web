@@ -38,14 +38,6 @@ header{
 .foot{
     grid-area:footer;
 }
-.logo{
-    grid-area: logo;
-    width:100%;
-    position: sticky;
-    top: 0px;
-    background-color: #e5e5e5b6;
-    z-index: 1;
-}
 .logo__img{
     display: flex;
     margin: 0 10px;
@@ -53,6 +45,10 @@ header{
     align-items: center;
     max-width: 100%;
     height: 100%;
+}
+.logo{
+    width: 180px;
+
 }
 .login__img img{
     height: 100%;
@@ -93,14 +89,24 @@ header{
     transform: scale(0.95);
 }
 
+/*Defino colores de menu bootstrap*/
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: #e5e5e5;
+}
+
+.navbar-light:hover .navbar-nav:hover .active>.nav-link:hover  {
+     color: #e5e5e5;
+}
+.card{
+    background-color: #e5e5e5;
+}
+
 .login{
     display:flex;
     justify-content: center;
     align-items: center;
     position: sticky;
     top: 0px;
-    background-color: #e5e5e5b6;
-    z-index: 1;
 }
 .login__button{
     padding: 5px 10px;
@@ -114,7 +120,22 @@ header{
     transition: background-color 0.2s linear,
                 transform 0.2s;
 }
+.btn__access{
+    background-color: #FCA311;
+    border-color:#FCA311;
+    color: #000000;
+    box-shadow: 3px 3px 10px;
+    text-shadow: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.2s linear,
+                transform 0.2s;
+}
 
+.btn__access:hover{
+    background-color: #14213d;
+    transform: translateY(-10%);
+}
 .login__button:hover{
      background-color: #14213d;
      transform: translateY(-10%);
@@ -131,23 +152,6 @@ header{
 }
 
 /*Estilo de la pagina principal*/
-.main--index{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-    grid-template-areas: "main__contenedor main__contenedor main__contenedor"
-                        "estadisticas datos cifras";
-    
-}
-.estadisticas{
-    grid-area: estadisticas;
-}
-.datos{
-    grid-area: datos;
-}
-.cifras{
-    grid-area: cifras;
-}
 
 .main__contenedor{
     grid-area: main__contenedor;
@@ -199,13 +203,9 @@ header{
     color:#14213d ;
     transform: translateY(-10%);
 }
-.section{
-    margin: 1.5%;
-    border: 2px solid #14213d;
-    border-radius: 10px;
-    text-align: justify;
-}
+
 .section__title{
+    font-size: 1.5rem;
     text-align: center;
     padding: 5px 0;
     color: #FFFFFF;
@@ -214,49 +214,26 @@ header{
 .section p{
     padding: 10px;
 }
-/*Defino Grilla de mi web*/
-.gridContainer{
-    display: grid;
-    grid-template-areas:
-	"logo nav nav nav nav login"
-    "main main main main main main"
-	"footer footer footer footer footer footer";
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 15vh auto auto auto;
-}
-
-
 
 /*Estilo de la página about*/
 
-.main--about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "historia historia_img"
-                         "encabezado encabezado"
-                         "equipo equipo";
+.img-carousel{
+    height: 50vh;
+    object-fit: contain;
 }
+
 .encabezado{
     grid-area: encabezado;
     padding: 10px 0;
 }
 .sectionAbout{
     grid-area: historia;
-    width: 90%;
     justify-self: center;
     align-self: center;
     padding: 0 10px;
 }
 .sectionAbout__text{
     text-align: justify;
-}
-.sectionAboutImg{
-    grid-area: historia_img;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 10px;
-    gap: 5px;
 }
 .sectionAboutImg img{
     width: 100%;
@@ -296,7 +273,7 @@ header{
     width: fit-content;
     font-size: 1.8rem;
     border-radius: 15px;
-    margin: 10px auto;
+    margin: 10px;
     padding: 5px 10px;
 }
 .contact__formulario{
@@ -304,7 +281,6 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 70vh;
 }
 .contact__formulario div{
     margin-top: 10px;
@@ -348,7 +324,6 @@ header{
 .location__maps{
     display: flex;
     flex-direction: column;
-    height: 70vh;
     justify-content: space-evenly;
     align-items: center;
     margin: 10px;
@@ -416,7 +391,6 @@ header{
     grid-area: servicios;
 }
 .section__title--services {
-    width: 50%;
     margin: auto;
     padding: 5px;
     border-radius: 15px;
@@ -463,6 +437,7 @@ header{
     align-items: center;
     padding: 10px;
 }
+
 .producto_2{
     grid-area: producto2;
     justify-items: center;
@@ -493,7 +468,6 @@ header{
     clear: both;
     display: inline-block;
     width: 100%;
-    height: 15vh;
     color: #ffffff;
     background: rgb(252,163,17);
     background: linear-gradient(135deg, rgba(252,163,17,1) 0%, rgba(122,117,117,1) 50%, rgba(0,0,0,1) 100%); 
@@ -512,6 +486,7 @@ header{
     font-weight: 500;
     align-self: center;
     justify-self:center;
+    padding-top: 10px;
 }
 .foot__networks{
     align-self: top;
@@ -552,15 +527,6 @@ header{
         max-width: 40%;
         flex: 1 1 auto;
         margin: 5px 0;
-    }
-    .login{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 0px;
-        background-color: #e5e5e5b6;
-        z-index: 1;
     }
 
     /*Responsive del index*/
@@ -648,9 +614,7 @@ header{
         width: 100%;
         padding: 0;
     }
-    .section__title{
-        padding: 5px 0;
-    }
+
     .sectionAbout p{
         padding: 10px;
     }

@@ -18,58 +18,72 @@
     <title>LEDGAT - Tecnlogías y Servicios para Telesalud</title>   
 </head>
 <body>
-    <div class="gridContainer">
-
+    <div>
         <!-- Comienzo de encabezado de logo y navegación -->
-        <div class="logo">
-            <a href="../index.html" class="logo__img"> <img src="../img/Logo.svg" alt="Logo"></a>
-        </div>
         <header class="header">
-            <nav class="nav">
-                <ul class="nav__ul">
-                    <li class="nav__li"><a href="../index.html">Home</a></li>
-                    <li class="nav__li"><a href="about.html">Quiénes Somos</a></li>
-                    <li class="nav__li"><a href="services.html">Servicios</a></li>
-                    <li class="nav__li"><a href="products.html">Productos</a></li>
-                    <li class="nav__li"><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid px-3">
+                        <a class="navbar-brand"href="../index.html" > <img class="img-fluid kenburns-bottom logo" src="../img/Logo.svg" alt="Logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__ul">
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link" href="about.html">Quiénes Somos</a>
+                                </li>
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link" href="services.html">Servicios</a>
+                                </li>
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link" href="products.html">Productos</a>
+                                </li>
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link"href="contact.html">Contacto</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex login">
+                                    <a href="login.html" class="btn btn-primary btn__access">Acceso</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
         </header>
-        <div class="login">
-            <div class="login__button">
-                <a href="login.html">Acceso</a>
-            </div>
-        </div>
         <!-- Final de encabezado -->
         <!-- Comienzo del cuerpo principal de la página-->
-        <main class="main main--login">
-            <section class="acceso">
-                <div class="acceso__contenedor">
-                    <h1 class="section__title contact__title">Acceder a área personal</h1>
-                    <form class="contact__formulario formulario__login"> 
-                        <div>
-                            <label for="user">E-mail:</label>
-                        </div>
-                        <div>
-                            <input type="email" name="user" id="user_1" placeholder="Ingresa tu e-mail *" required>
-                        </div>
-                        <div>
-                            <label for="pass">Contraseña:</label>
-                        </div>
-                        <div>
-                            <input type="password" name="pass" id="pass_1" placeholder="Ingresa tu contraseña *" required>
-                        </div>
-                        <div>
-                            <a href="#">¡Olvidé mi contraseña!</a>
-                        </div>
-                        <div>
-                            <button type="submit" class="contact__formulario__enviar">Ingresar</button>
-                        </div>
-                    </form>
+        <main class="container-fluid p-0">
+            <div class="row align-items-center justify-items-center gx-1">
+                <section class="col-12 col-md-4 acceso">
+                    <div class="acceso__contenedor d-flex flex-column align-items-center">
+                        <h1 class="section__title contact__title">Acceder a área personal</h1>
+                        <form class="contact__formulario formulario__login w-100"> 
+                            <div>
+                                <label for="user">E-mail:</label>
+                            </div>
+                            <div>
+                                <input type="email" name="user" id="user_1" placeholder="Ingresa tu e-mail *" required>
+                            </div>
+                            <div>
+                                <label for="pass">Contraseña:</label>
+                            </div>
+                            <div>
+                                <input type="password" name="pass" id="pass_1" placeholder="Ingresa tu contraseña *" required>
+                            </div>
+                            <div>
+                                <a href="#">¡Olvidé mi contraseña!</a>
+                            </div>
+                            <div>
+                                <button type="submit" class="contact__formulario__enviar">Ingresar</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <div class="col-12 col-md-8 accesoImg">
+                    <!-- <img src="/img/login.png" alt="Imagen de logueo" class="login__img"> -->
                 </div>
-            </section>
-            <div class="accesoImg">
-                <!-- <img src="/img/login.png" alt="Imagen de logueo" class="login__img"> -->
             </div>
         </main>
         <!-- Final del cuerpo principal de la página-->

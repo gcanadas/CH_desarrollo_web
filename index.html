@@ -18,52 +18,73 @@
     <title>LEDGAT - Tecnologías y Servicios para Telesalud</title>   
 </head>
 <body>
-    <div class="gridContainer">
+    <div>
         <!-- Comienzo de encabezado de logo y navegación -->
-        <div class="logo">
-            <a href="index.html" class="logo__img"> <img src="img/Logo.svg" alt="Logo"></a>
-        </div>
         <header class="header">
-            <nav class="nav">
-                <ul class="nav__ul">
-                    <li class="nav__li"><a href="index.html">Home</a></li>
-                    <li class="nav__li"><a href="pages/about.html">Quiénes Somos</a></li>
-                    <li class="nav__li"><a href="pages/services.html">Servicios</a></li>
-                    <li class="nav__li"><a href="pages/products.html">Productos</a></li>
-                    <li class="nav__li"><a href="pages/contact.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid px-3">
+                        <a class="navbar-brand"href="index.html" > <img class="img-fluid kenburns-bottom logo" src="img/Logo.svg" alt="Logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__ul">
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link" href="pages/about.html">Quiénes Somos</a>
+                                </li>
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link" href="pages/services.html">Servicios</a>
+                                </li>
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link" href="pages/products.html">Productos</a>
+                                </li>
+                                <li class="nav-item nav__li">
+                                    <a class="nav-link"href="pages/contact.html">Contacto</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex login">
+                                    <a href="pages/login.html" class="btn btn-primary btn__access">Acceso</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
         </header>
-        <div class="login">
-            <div class="login__button">
-                <a href="pages/login.html">Acceso</a>
-            </div>
-        </div>
         <!-- Final de encabezado -->
         <!-- Comienzo del cuerpo principal de la página-->
-        <main class="main main--index">
-            <div class="main__contenedor">
+        <main class="main">
+            <div class="main__contenedor container-fluid">
                 <div class="main__contenedor__title">
                     <h1 class="main__title">Soluciones de telesalud para profesionales e instituciones médicas</h1>
                     <p class="main__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas ducimus dolorem quaerat.</p>
                     <a href="pages/contact.html" class="main__link">Contrate LEDGAT ahora</a>
                 </div>
-                <!-- <img src="/img/Background.jpg" alt="Ejemplo de Telesalud" class="main__background"> -->
-                <div class="main__button">
+
+            </div>
+            <div class="container-fluid">
+                <div class="row gx-0">
+                    <section class="col-12 col-md-4 section">
+                        <div class="card m-1">
+                            <h2 class="card-title section__title">Estadísticas</h2>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nam, tempora quas facere quae nemo veritatis nulla fugit ut delectus dolore fugit ipsa repellat officia, iusto animi nobis obcaecati fugit fugit quos veritatis voluptas a iure fuga vero fugit officiis sapiente. Iusto modi praesentium officiis excepturi sapiente sed beatae minus veritatis voluptas, quas vel reiciendis est?</p>
+                        </div>
+                    </section>
+                    <section class="col-12 col-md-4 section">
+                        <div class="card m-1">
+                            <h2 class="card-title section__title">Datos</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis, porro enim officiis, optio quidem a, maiores possimus facilis error voluptatem commodi ab obcaecati facere iusto saepe. Itaque sed hic aspernatur natus labore magnam culpa facere dolores reiciendis non provident, voluptate dignissimos quo eligendi neque veniam corrupti accusamus rerum ex.</p>
+                        </div>
+                    </section>
+                    <section class="col-12 col-md-4 section">
+                        <div class="card m-1">
+                            <h2 class="card-title section__title">Cifras</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi cum consequuntur molestias eaque, nostrum quod ab, architecto veritatis qui commodi iure placeat hic reiciendis recusandae, ipsam quae maiores delectus praesentium. Quia, mollitia eveniet rem quisquam pariatur, non tempora laudantium, sequi quos libero porro. Cupiditate ullam itaque autem fugiat, eaque.</p>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <section class="section estadisticas">
-                <h2 class="section__title">Estadísticas</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nam, tempora quas facere quae nemo veritatis nulla fugit ut delectus dolore fugit ipsa repellat officia, iusto animi nobis obcaecati fugit fugit quos veritatis voluptas a iure fuga vero fugit officiis sapiente. Iusto modi praesentium officiis excepturi sapiente sed beatae minus veritatis voluptas, quas vel reiciendis est?</p>
-            </section>
-            <section class="section datos">
-                <h2 class="section__title">Datos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis, porro enim officiis, optio quidem a, maiores possimus facilis error voluptatem commodi ab obcaecati facere iusto saepe. Itaque sed hic aspernatur natus labore magnam culpa facere dolores reiciendis non provident, voluptate dignissimos quo eligendi neque veniam corrupti accusamus rerum ex.</p>
-            </section>
-            <section class="section cifras">
-                <h2 class="section__title">Cifras</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi cum consequuntur molestias eaque, nostrum quod ab, architecto veritatis qui commodi iure placeat hic reiciendis recusandae, ipsam quae maiores delectus praesentium. Quia, mollitia eveniet rem quisquam pariatur, non tempora laudantium, sequi quos libero porro. Cupiditate ullam itaque autem fugiat, eaque.</p>
-            </section>
         </main>
         <!-- Final del cuerpo principal de la página-->
         <!-- Pie de página -->
