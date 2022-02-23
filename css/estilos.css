@@ -26,18 +26,6 @@ header{
     z-index: 1;
 
 }
-.header{
-    grid-area: nav;
-}
-.main{
-    grid-area: main;
-}
-.section{
-    grid-area: section;
-}
-.foot{
-    grid-area:footer;
-}
 .logo__img{
     display: flex;
     margin: 0 10px;
@@ -211,8 +199,25 @@ header{
     color: #FFFFFF;
     background-color: #14213d;
 }
+
+.title__animation{
+
+    background: linear-gradient(90deg, #000000, #14213d, #e5e5e5);
+    background-size: 400% 400%;
+    animation: titleGradient 5s ease infinite;
+}
+
+@keyframes titleGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
 .section p{
     padding: 10px;
+}
+.text_justify{
+    text-align: justify;
 }
 
 /*Estilo de la página about*/
@@ -223,7 +228,6 @@ header{
 }
 
 .encabezado{
-    grid-area: encabezado;
     padding: 10px 0;
 }
 .sectionAbout{
@@ -239,10 +243,7 @@ header{
     width: 100%;
     display:block;
 }
-.sectionTeam{
-    grid-area: equipo;
-    display: flex;
-}
+
 .team__img{
     width: 200px;
     border: 6px solid #14213d;
@@ -369,15 +370,8 @@ header{
 }
 
 /*Estilo de la página services*/
-.main--services{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "servicio_img servicios"
-                         "servicios_des servicios_des";
-}
+
 .sectionServicesImg{
-    grid-area: servicio_img;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 10px;
@@ -387,18 +381,13 @@ header{
     width: 100%;
     display:block;
 }
-.servicios{
-    grid-area: servicios;
-}
+
 .section__title--services {
     margin: auto;
     padding: 5px;
     border-radius: 15px;
 }
-.servicios__descripcion{
-    grid-area: servicios_des;
-    display: flex;
-}
+
 .servicios__descripcion p{
     background-color: #7a7575;
 }
@@ -413,25 +402,15 @@ header{
 
 
 /*Estilo de la pagina products*/
-.main--products{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "producto producto"
-                         "producto1 producto1_img"
-                         "producto2_img producto2";
-}
+
 .productos{
-    grid-area: producto;
     margin-top: 10px;
 }
 .producto_1{
-    grid-area: producto1;
     justify-items: center;
     align-self: center;
 }
 .producto_1__img{
-    grid-area: producto1_img;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -439,12 +418,10 @@ header{
 }
 
 .producto_2{
-    grid-area: producto2;
     justify-items: center;
     align-self: center;
 }
 .producto_2__img{
-    grid-area: producto2_img;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -659,7 +636,7 @@ header{
         grid-template-areas: "contacto" "ubicacion";
     }
     .contact__title{
-        width: auto;
+        width: 100%;
         border-radius: 0;
     }
     address{
