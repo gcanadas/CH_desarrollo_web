@@ -1,15 +1,17 @@
+@import "utilities/variables";
 @import "base/reset";
 
-@import "layout/heater";
+@import "layout/header";
 @import "layout/footer";
 
 @import "vendors/bootstrap";
+@import "components/sections";
 
-@import "view/index";
-@import "view/about";
-@import "view/services";
-@import "view/products";
-@import "view/contact";
-@import "view/login";
+@import "views/index";
+@import "views/about";
+@import "views/services";
+@import "views/products";
+@import "views/contact";
+@import "views/login";
 
 @import "base/mQueries"

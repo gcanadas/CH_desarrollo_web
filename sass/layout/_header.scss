@@ -34,18 +34,18 @@ header{
                         transform 0.2s;
         }
         & a:hover{
-            color: #e5e5e5;
+            color: $hoover_color;
         }
         & a:active{
-            transform: scale(0.95);
+            transform: scale($escala);
         }
     }
 }
 
 /*Colores y efectos del boton de login*/
 .btn__access{
-    background-color: #FCA311;
-    border-color:#FCA311;
+    background-color: $yellow_back;
+    border-color: $yellow_back;
     color: #000000;
     box-shadow: 3px 3px 10px;
     text-shadow: none;
@@ -54,7 +54,7 @@ header{
     transition: background-color 0.2s linear,
                 transform 0.2s;
             &:hover{
-                background-color: #14213d;
-                transform: translateY(-10%);
+                background-color: $btn_color;
+                transform: translateY($translateY);
             }
 }

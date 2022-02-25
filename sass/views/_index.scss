@@ -18,7 +18,7 @@
 .main__title{
     font-size: 3rem;
     color: #FFFFFF;
-    text-shadow: 5px 5px 15px #7a7575;
+    text-shadow: $sombra_titulo;
     width: 70%;
     margin-top: auto;
     margin-bottom: 40px;
@@ -33,7 +33,7 @@
     font-weight: bold;
     color: #FFFFFF;
     padding: 10px;
-    background-color: #14213d;
+    background-color: $btn_color;
     text-shadow: none;
     border-radius:10px;
     margin-bottom: 30px;
@@ -41,9 +41,9 @@
     transition: color 0.2s linear, 
                 background-color 0.2s linear,
                 transform 0.2s;
-            &__link:hover{
-                background-color: #e5e5e5;
-                color:#14213d ;
-                transform: translateY(-10%);
-            }
+    &:hover{
+        background-color: #e5e5e5;
+        color:$btn_color ;
+        transform: translateY($translateY);
+    }
 }

@@ -1,16 +1,5 @@
 /*Estilo de la página services*/
 
-.sectionServicesImg{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 10px;
-    gap: 5px;
-    & img{
-        width: 100%;
-        display:block;
-    }
-}
-
 .section__title--services {
     margin: auto;
     padding: 5px;

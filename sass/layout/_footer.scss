@@ -4,8 +4,8 @@
     display: inline-block;
     width: 100%;
     color: #ffffff;
-    background: rgb(252,163,17);
-    background: linear-gradient(135deg, rgba(252,163,17,1) 0%, rgba(122,117,117,1) 50%, rgba(0,0,0,1) 100%); 
+    background: $yellow_back;
+    background: linear-gradient(135deg, $yellow_back 0%, rgba(122,117,117,1) 50%, rgba(0,0,0,1) 100%); 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);

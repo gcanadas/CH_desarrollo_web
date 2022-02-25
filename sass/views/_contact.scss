@@ -26,11 +26,11 @@
         transition: background-color 0.1s;
     }
     & input:focus{
-        background-color: #14213d;
+        background-color: $btn_color;
         color: #e5e5e5;
     }
     & textarea:focus{
-        background-color: #14213d;
+        background-color: $btn_color;
         color: #e5e5e5;
     }
 }
@@ -39,13 +39,13 @@
     display: block;
     margin: auto;
     padding: 5px;
-    background-color: #FCA311;
+    background-color: $yellow_back;
     border-radius: 10px;
     font-weight: bold;
     transition: background-color 0.1s,
                 color 0.1s;
     &:active{
-        background-color: #14213d;
+        background-color: $btn_color;
         color: #ffffff;
     }
 }

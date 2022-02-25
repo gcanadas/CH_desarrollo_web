@@ -23,8 +23,13 @@
 
 .team__img{
     width: 200px;
-    border: 6px solid #14213d;
+    border: 6px solid $btn_color;
     border-radius: 50%;
     display: block;
     margin: 10px auto;
+}
+
+.section h3{
+    text-align: center;
+    padding: 10px 0;
 }
