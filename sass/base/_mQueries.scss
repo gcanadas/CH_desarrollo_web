@@ -1,0 +1,142 @@
+/*Defino mis Media Queries*/
+
+@media screen and (max-width: 768px){
+
+    /*Responsive del menu y logo*/
+
+    .logo{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Responsive del index*/
+    .main__contenedor{
+    height:80vh ;
+        &__title{
+        height:80vh;
+        }
+    }
+    .main__title{
+        width: 85%;
+        margin-bottom: 20px;
+
+    }
+
+    /*Responsive de contactos*/
+    .contact__title{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 425px){
+    /*Responsive del menu y logo*/
+
+    .nav__ul {
+        flex-wrap: wrap;
+    }
+    .nav__li {
+        padding: 5px 0;
+        margin: 0px 5px;
+        font-size: 1rem;
+    }
+    .login__button {
+        font-size: 1rem;
+    }
+    /*Responsive del index*/
+    .main__title {
+        font-size: 2rem;
+        width: 90%;
+    }
+    .main__subtitle {
+        font-size: 1.2rem;
+    }
+    .main__link {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        border: 7px solid #14213d;
+    }
+    .main__contenedor{
+        height:90vh ;
+        &__title{
+            height:90vh;
+        }
+    }
+
+    /*Responsive de la pagina about*/
+    .encabezado {
+        grid-area: encabezado;
+        padding: 5px 0;
+    }
+    .sectionAbout{
+        width: 100%;
+        padding: 0;
+        & p{
+            padding: 10px;
+        }
+    }
+
+    .sectionTeam{
+        flex-direction: column;
+    }
+
+    /*Responsive Pagina Servicios*/
+    .servicios{
+        display: none;
+    }
+    .sectionServicesImg{
+        grid-column: 1/3;
+    }
+    .servicios__descripcion{
+        flex-direction: column;
+    }
+
+    /*Responsive Pagina Productos*/
+
+    .productos{
+        font-size: 1.5rem;
+    }
+    .product__title{
+        margin: 5px auto;
+    }
+
+    /*Responsive Pagina Contacto*/
+
+    .contact__title{
+        width: 100%;
+        border-radius: 0;
+    }
+    address{
+        font-size: 0.9rem;
+    }
+
+    /*Responsive Pagina Login*/
+
+    .accesoImg{
+        height: 90vh;
+    }
+    /*Responsive del Footer*/
+    .foot {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        font-size: 0.9rem;
+        &__copy {
+            margin-left: 0;
+            font-weight: 500;
+            grid-column: auto;
+            grid-row: 3/ 4;
+            align-self: center;
+            text-align: center;
+        }
+        &__networks {
+            align-self: center;
+            width: 100%;
+            text-align: center;
+            & li {
+                padding: 0 20px;
+            }
+        }
+    }
+
+}

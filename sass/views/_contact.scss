@@ -1,0 +1,64 @@
+/*Estilo de la pagina contact*/
+
+.contact__title{
+    width: fit-content;
+    font-size: 1.8rem;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px 10px;
+}
+.contact__formulario{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & div{
+        margin-top: 10px;
+    }
+    & input, select, textarea {
+        width: 70%;
+        padding: 5px;
+        display: block;
+        margin: auto;
+        background-color: #7a7575;
+        color: #e5e5e5;
+        border-radius: 5px;
+        transition: background-color 0.1s;
+    }
+    & input:focus{
+        background-color: #14213d;
+        color: #e5e5e5;
+    }
+    & textarea:focus{
+        background-color: #14213d;
+        color: #e5e5e5;
+    }
+}
+.contact__formulario__enviar{
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    background-color: #FCA311;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.1s,
+                color 0.1s;
+    &:active{
+        background-color: #14213d;
+        color: #ffffff;
+    }
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.location__maps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+.location iframe{
+    margin: 10px;
+}

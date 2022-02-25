@@ -1,0 +1,30 @@
+/*Estilo de la página about*/
+
+.img-carousel{
+    height: 50vh;
+    object-fit: contain;
+}
+
+.encabezado{
+    padding: 10px 0;
+}
+.sectionAbout{
+    justify-self: center;
+    align-self: center;
+    padding: 0 10px;
+    &__text{
+        text-align: justify;
+    }
+}
+.sectionAboutImg img{
+    width: 100%;
+    display:block;
+}
+
+.team__img{
+    width: 200px;
+    border: 6px solid #14213d;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}

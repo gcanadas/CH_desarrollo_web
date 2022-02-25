@@ -1,0 +1,30 @@
+/*Estilo de la página services*/
+
+.sectionServicesImg{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+    gap: 5px;
+    & img{
+        width: 100%;
+        display:block;
+    }
+}
+
+.section__title--services {
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.servicios__descripcion p{
+    background-color: #7a7575;
+}
+.sectionAbout__text ul{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+    list-style-type: none;
+    font-weight: 600;
+}

@@ -1,0 +1,27 @@
+.section__title{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 0;
+    color: #FFFFFF;
+    background-color: #14213d;
+}
+
+.title__animation{
+    background: linear-gradient(90deg, #000000, #14213d, #e5e5e5);
+    background-size: 400% 400%;
+    animation: titleGradient 5s ease infinite;
+}
+
+@keyframes titleGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.section p{
+    padding: 10px;
+}
+
+.text_justify{
+    text-align: justify;
+}

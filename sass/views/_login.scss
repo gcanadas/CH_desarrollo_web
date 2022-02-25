@@ -1,0 +1,31 @@
+/*Estilo de la página login*/
+.accesoImg{
+    grid-area: login_img;
+    background-image: url(../img/login.png);
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+.acceso{
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login__img{
+    display: block;
+    width: 100%;
+}
+.formulario__login{
+    display:block;
+    height: auto;
+    margin: 30px 0;
+}
+.contact__formulario label, a{
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 10px #7a7575;
+}

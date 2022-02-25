@@ -1,0 +1,38 @@
+ /*Defino el estilo del footer*/
+ .foot{
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    color: #ffffff;
+    background: rgb(252,163,17);
+    background: linear-gradient(135deg, rgba(252,163,17,1) 0%, rgba(122,117,117,1) 50%, rgba(0,0,0,1) 100%); 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    &__copy{
+        margin-left: 1.5rem;
+        font-weight: 500;
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        align-self: center;
+    }
+    &__follow{
+        font-weight: 500;
+        align-self: center;
+        justify-self:center;
+        padding-top: 10px;
+    }
+    &__networks{
+        align-self: top;
+        justify-self:center;
+        & li{
+            margin: auto;
+            padding: 0 10px;
+            display: inline-block;
+            width: auto;
+        }
+        & img{
+            width: 1.5rem;
+        }
+    }
+}

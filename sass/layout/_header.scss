@@ -1,0 +1,60 @@
+/*Estilos del header y barra de navegación*/
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    width: 180px;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    &__ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        font-size:0; /* truco por el uso de inline-block*/
+    }
+    &__li{
+        display: inline-block;
+        padding: 5px;
+        margin: 0px 20px;
+        width: auto;
+        font-size: 1.4rem;
+        & a{
+            color: black;
+            transition: color .2s linear,
+                        transform 0.2s;
+        }
+        & a:hover{
+            color: #e5e5e5;
+        }
+        & a:active{
+            transform: scale(0.95);
+        }
+    }
+}
+
+/*Colores y efectos del boton de login*/
+.btn__access{
+    background-color: #FCA311;
+    border-color:#FCA311;
+    color: #000000;
+    box-shadow: 3px 3px 10px;
+    text-shadow: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.2s linear,
+                transform 0.2s;
+            &:hover{
+                background-color: #14213d;
+                transform: translateY(-10%);
+            }
+}
