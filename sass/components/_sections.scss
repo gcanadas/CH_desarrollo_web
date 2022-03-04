@@ -3,11 +3,11 @@
     text-align: center;
     padding: 5px 0;
     color: #FFFFFF;
-    background-color: #14213d;
+    background-color: map-get($colores, secundario);
 }
 
 .title__animation{
-    background: linear-gradient(90deg, #000000, #14213d, #e5e5e5);
+    background: linear-gradient(90deg, #000000, map-get($colores, secundario), map-get($colores, auxiliar));
     background-size: 400% 400%;
     animation: titleGradient 5s ease infinite;
 }

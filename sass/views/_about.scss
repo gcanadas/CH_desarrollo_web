@@ -23,7 +23,7 @@
 
 .team__img{
     width: 200px;
-    border: 6px solid $btn_color;
+    border: 6px solid map-get($colores, secundario);
     border-radius: 50%;
     display: block;
     margin: 10px auto;

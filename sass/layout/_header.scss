@@ -34,7 +34,7 @@ header{
                         transform 0.2s;
         }
         & a:hover{
-            color: $hoover_color;
+            color: map-get($colores, auxiliar);
         }
         & a:active{
             transform: scale($escala);
@@ -44,17 +44,13 @@ header{
 
 /*Colores y efectos del boton de login*/
 .btn__access{
-    background-color: $yellow_back;
-    border-color: $yellow_back;
-    color: #000000;
+    @include button(1.2rem, 600, #000000, map-get($colores, primario), none);
+    border-color: map-get($colores, primario);
     box-shadow: 3px 3px 10px;
-    text-shadow: none;
-    font-size: 1.2rem;
-    font-weight: 600;
     transition: background-color 0.2s linear,
                 transform 0.2s;
-            &:hover{
-                background-color: $btn_color;
-                transform: translateY($translateY);
-            }
+     &:hover{
+        background-color: map-get($colores, secundario);
+        transform: translateY($translateY);
+    }
 }

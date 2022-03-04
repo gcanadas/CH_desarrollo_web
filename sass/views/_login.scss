@@ -1,15 +1,10 @@
 /*Estilo de la página login*/
 .accesoImg{
-    grid-area: login_img;
     background-image: url(../img/login.png);
-    display: inline-block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend .background_properties;
     height: 70vh;
 }
 .acceso{
-    grid-area: login;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,5 +22,5 @@
     display: block;
     text-align: center;
     color: #FFFFFF;
-    text-shadow: 3px 3px 10px #7a7575;
+    text-shadow: 3px 3px 10px map-get($colores, complementario);
 }

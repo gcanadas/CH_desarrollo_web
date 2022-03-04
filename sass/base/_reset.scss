@@ -9,7 +9,7 @@
 
 /*Estilo del Body*/
 body{
-    background-color: $yellow_back;
+    background-color: map-get($colores, primario);
     font-family: $princ_font;
 }
 

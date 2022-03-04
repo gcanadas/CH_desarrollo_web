@@ -55,7 +55,7 @@
         font-size: 1.2rem;
         font-weight: bold;
         color: #FFFFFF;
-        border: 7px solid #14213d;
+        border: 7px solid map-get($colores, secundario);
     }
     .main__contenedor{
         height:90vh ;

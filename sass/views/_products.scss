@@ -24,12 +24,12 @@
 
 .product__title{
     text-align: center;
-    color: $btn_color;
-    background-color: #e5e5e5;
+    color: map-get($colores, secundario);
+    background-color: map-get($colores, auxiliar);
     font-size: 1.5rem; 
     width: 60%;
     margin: auto;
     padding: 10px;
-    border: 4px solid $btn_color;
+    border: 4px solid map-get($colores, secundario);
     border-radius: 20px
 }

@@ -1,13 +1,11 @@
 /*Estilo de la página services*/
 
 .section__title--services {
-    margin: auto;
-    padding: 5px;
-    border-radius: 15px;
+    @extend .btn_basic;
 }
 
 .servicios__descripcion p{
-    background-color: #7a7575;
+    background-color: map-get($colores, complementario);
 }
 .sectionAbout__text ul{
     display: block;
