@@ -3,6 +3,9 @@
 header{
     position: sticky;
     top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .logo{
@@ -40,6 +43,14 @@ header{
             transform: scale($escala);
         }
     }
+}
+
+.login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
 }
 
 /*Colores y efectos del boton de login*/
