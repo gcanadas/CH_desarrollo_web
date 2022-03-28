@@ -1,9 +1,18 @@
 .section__title{
     font-size: 1.5rem;
+    font-weight: 900;
     text-align: center;
     padding: 5px 0;
     color: #FFFFFF;
     background-color: map-get($colores, secundario);
+}
+
+.section__title--main{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 5px 0;
+    color: #14213d;
 }
 
 .title__animation{
