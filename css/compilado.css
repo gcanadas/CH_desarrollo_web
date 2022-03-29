@@ -416,7 +416,7 @@ header {
 /*Estilo de la página login*/
 .accesoImg {
   background-image: url(../img/login.png);
-  height: 70vh; }
+  height: 80vh; }
 
 .acceso {
   display: flex;
